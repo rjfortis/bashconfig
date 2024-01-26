@@ -113,8 +113,17 @@ if ! shopt -oq posix; then
 fi
 
 
+# --------- Custom commands and functions ---------
+function code() {
+(flatpak run com.visualstudio.code $*)
+}
+
+
+
 
 
 # Print newline AFTER executing a command
 PROMPT_COMMAND="export PROMPT_COMMAND=echo"
 alias clear="unset PROMPT_COMMAND; clear; PROMPT_COMMAND='export PROMPT_COMMAND=echo'"
+
+
