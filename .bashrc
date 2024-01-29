@@ -114,11 +114,6 @@ fi
 
 
 # --------- Custom commands and functions ---------
-function code() {
-(flatpak run com.visualstudio.code $*)
-}
-
-
 
 
 
